@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="119dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/animal"
+
+        />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="148dp"
+        android:layout_height="68dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+
+
+            android:textSize="22dp"
+
+            android:textStyle="bold"
+            tools:text="Tiendat"
+
+            />
+
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            tools:text="price: priceless" />
+
+
+    </LinearLayout>
+    <TextView
+
+        android:id="@+id/product_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="01"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
+</LinearLayout>
