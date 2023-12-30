@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/teal_200"
     tools:context=".MainActivity">
-
 
     <TextView
         android:id="@+id/textView"
@@ -17,40 +18,47 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:fontFamily="@font/chakrapetchbold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btn_play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        android:background="@drawable/background_btn"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/chakrapetchbold"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:onClick="main_btn"
+        android:text="Play" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <TextView
-            android:layout_width="8dp"
-            android:layout_height="8dp"/>
-        <Button
-            android:id="@+id/btn_play"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_btn"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:fontFamily="@font/chakrapetchbold"
-            android:textSize="20sp"
-            android:padding="8dp"
-            android:onClick="main_btn"
-            android:text="Play" />
+            android:orientation="vertical"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
 
 
-    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/introductionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:text="GoQuizzz là ứng dụng tuyệt vời dành cho những người yêu thích trí tuệ và muốn thách thức bản thân thông qua các trò chơi kiến thức đa dạng. Với giao diện đẹp mắt và dễ sử dụng, GoQuizzz mang đến trải nghiệm người dùng tuyệt vời từ việc học hỏi và giải trí.\n
+            Với hàng nghìn câu hỏi thuộc nhiều lĩnh vực khác nhau như khoa học, văn hóa, lịch sử, âm nhạc và nhiều hơn nữa, GoQuizzz là nơi bạn có thể kiểm tra kiến thức của mình và cùng thách thức bạn bè. Ứng dụng không chỉ giúp bạn nâng cao kiến thức mà còn tạo ra không khí cạnh tranh thú vị và kích thích tinh thần học hỏi.\n
+            GoQuizzz còn đi kèm với tính năng tạo câu hỏi và bài thi riêng, giúp người dùng chia sẻ kiến thức của mình và tạo ra những trận đấu quizzz độc đáo. Bạn có thể thách thức bạn bè, đồng nghiệp hoặc tham gia các giải đấu quizzz cộng đồng để trải nghiệm sự hứng thú và hấp dẫn \n
+            Đồng thời, GoQuizzz còn cung cấp thống kê chi tiết về kết quả của người chơi, giúp họ theo dõi sự tiến triển và khám phá những lĩnh vực cần cải thiện. Ứng dụng này không chỉ là một công cụ giải trí mà còn là một cách hiệu quả để nâng cao tri thức và kỹ năng tư duy\n
+            Tải ngay GoQuizzz để trải nghiệm không gian giáo dục trí tuệ sôi động và đầy thách thức!"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
