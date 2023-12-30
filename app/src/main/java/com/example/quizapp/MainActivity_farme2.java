@@ -67,12 +67,13 @@ public class MainActivity_farme2 extends AppCompatActivity {
                 startActivity(intent);
             }
 
-
         });
         btn_QuestionList = findViewById(R.id.btn_QuestionList);
         btn_QuestionList.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_farme2.this,MainActivity_farme3.class);
+
+                Intent intent = new Intent(MainActivity_farme2.this, MainActivity_farme3.class);
                 startActivity(intent);
             }
         });

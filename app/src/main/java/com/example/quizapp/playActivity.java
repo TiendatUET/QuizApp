@@ -204,9 +204,7 @@ public class playActivity extends AppCompatActivity {
                         },2000);
 
                     }
-//                        else {
-// //                          toast Toast.makeText(playActivity.this ,  "phamtiendat",Toast.LENGTH_LONG).show();
-//                        }
+
                 }
         );
 

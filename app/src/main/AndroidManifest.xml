@@ -14,13 +14,10 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
-            android:name=".Question_list"
+            android:name=".MainActivity_farme3"
             android:exported="false" />
         <activity
             android:name=".ResulteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".settingActivity"
             android:exported="false" />
         <activity
             android:name=".playActivity"
@@ -35,6 +32,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity_farme2" />
+        <activity android:name=".DetailQuestion" />
     </application>
 
 </manifest>
